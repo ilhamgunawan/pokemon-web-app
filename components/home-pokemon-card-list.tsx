@@ -20,9 +20,6 @@ export default function HomePokemonCardList(props: Props) {
     const scrollTop = e.target.scrollTop;
     const scrollHeight = e.target.scrollHeight;
     const offset = 1;
-    // console.log(e.currentTarget.offsetHeight);
-    // console.log('scrollHeight', scrollHeight);
-    // console.log('total', scrollTop + clientHeight);
     const hasReachBottom = (scrollTop + clientHeight + offset) >= scrollHeight;
     if (hasReachBottom) {
       fetchMorePokemons();
@@ -37,7 +34,6 @@ export default function HomePokemonCardList(props: Props) {
       {isFetchingMorePokemons
         ? <div className={commonStyles['fetchmore-container']}><LoadingSpinner /></div>
         : null
-        // : <button onClick={() => fetchMorePokemons()}>Load more</button>
       }
     </main>
   );
