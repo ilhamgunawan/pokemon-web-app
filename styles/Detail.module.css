@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: #222;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 0.8rem;
+  background-color: #d5d5d5;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.summary-description-container {
+  flex: 2;
+}
+
+.summary-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.7rem 0;
+}
+
+.summary-description {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 0.7rem 0;
+}
+
+.summary-additional {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0.7rem 0;
+}
+
+.ability-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 0 0 7px 0;
+}
+
+.ability-item {
+  background-color: var(--normalOne);
+}
+
+.stat-container {
+  padding: 1rem;
+  background-color: #222;
+  border-radius: 10px;
+}
+
+.stat-title {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+
+.stat-list {
+  display: flex;
+}
+
+.stat-item {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.stat-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.stat-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.stat-bar-container {
+  width: 100%;
+  height: 12px;
+  background-color: var(--darkOne);
+  border-radius: 10px;
+  position: relative;
+}
+
+.stat-bar {
+  height: 12px;
+  max-width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  background-color: var(--grassOne);
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    max-width: 180px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1024px;
+    margin: auto;
+  }
+}

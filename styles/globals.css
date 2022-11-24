@@ -1,0 +1,73 @@
+:root {
+  --normalOne: #a4acaf;
+  --normalTwo: rgba(164, 172, 175, 0.8);
+  --fightingOne: #d56723;
+  --fightingTwo: rgba(213, 103, 35, 0.8);
+  --flyingOne: #3dc7ef;
+  --flyingTwo: rgba(61, 199, 239, 0.8);
+  --poisonOne: #b97fc9;
+  --poisonTwo: rgba(185, 127, 201, 0.8);
+  --groundOne: #f7de3f;
+  --groundTwo: rgba(247, 222, 63, 0.8);
+  --rockOne: #a38c21;
+  --rockTwo: rgba(163, 140, 33, 0.8);
+  --bugOne: #729f3f;
+  --bugTwo: rgba(114, 159, 63, 0.8);
+  --ghostOne: #7b62a3;
+  --ghostTwo: rgba(123, 98, 163, 0.8);
+  --steelOne: #9eb7b8;
+  --steelTwo: rgba(158, 183, 184, 0.8);
+  --fireOne: #fd7d24;
+  --fireTwo: rgba(253, 125, 36, 0.8);
+  --waterOne: #4592c4;
+  --waterTwo: rgba(69, 146, 196, 0.8);
+  --grassOne: #9bcc50;
+  --grassTwo: rgba(155, 204, 80, 0.8);
+  --electricOne: #eed535;
+  --electricTwo: rgba(238, 213, 53, 0.8);
+  --psychicOne: #f366b9;
+  --psychicTwo: rgba(243, 102, 185, 0.8);
+  --iceOne: #51c4e7;
+  --iceTwo: rgba(81, 196, 231, 0.8);
+  --dragonOne: #f16e57;
+  --dragonTwo: rgba(241, 110, 87, 0.8);
+  --darkOne: #707070;
+  --darkTwo: rgba(112, 112, 112, 0.8);
+  --fairyOne: #fdb9e9;
+  --fairyTwo: rgba(253, 185, 233, 0.8);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #282a2e;
+  /* background: rgb(38,115,121);
+  background: linear-gradient(0deg, rgba(38,115,121,1) 0%, rgba(3,34,38,1) 100%); */
+  /* background: linear-gradient(0deg, rgba(29,191,199,1) 0%, rgba(4,42,41,1) 100%); */
+  /* background: linear-gradient(0deg, rgba(127,29,199,1) 0%, rgba(22,14,45,1) 100%); */
+  width: 100%;
+  /* min-height: 100vh; */
+  color: #F4F6FA;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */

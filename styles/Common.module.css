@@ -1,0 +1,151 @@
+.bg-grass {
+  background-color: var(--grassOne);
+}
+
+.bg-normal {
+  background-color: var(--normalOne);
+}
+
+.bg-fighting {
+  background-color: var(--fightingOne);
+}
+
+.bg-flying {
+  background-color: var(--flyingOne);
+}
+
+.bg-poison {
+  background-color: var(--poisonOne);
+}
+
+.bg-ground {
+  background-color: var(--groundOne);
+}
+
+.bg-rock {
+  background-color: var(--rockOne);
+}
+
+.bg-bug {
+  background-color: var(--bugOne);
+}
+
+.bg-ghost {
+  background-color: var(--ghostOne);
+}
+
+.bg-steel {
+  background-color: var(--steelOne);
+}
+
+.bg-fire {
+  background-color: var(--fireOne);
+}
+
+.bg-water {
+  background-color: var(--waterOne);
+}
+
+.bg-electric {
+  background-color: var(--electricOne);
+}
+
+.bg-psychic {
+  background-color: var(--psychicOne);
+}
+
+.bg-ice {
+  background-color: var(--iceOne);
+}
+
+.bg-dragon {
+  background-color: var(--dragonOne);
+}
+
+.bg-dark {
+  background-color: var(--darkOne);
+}
+
+.bg-fairy {
+  background-color: var(--fairyOne);
+}
+
+.back-button {
+  background-color: #d5d5d5;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  box-shadow: 0 2px 10px 3px var(--electricTwo);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 17vh 80vh;
+  width: 100%;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+.fetchmore-container {
+  width: 100%;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.loading-img {
+  width: 50px;
+  height: auto;
+  animation: rotate 1s linear infinite;
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+}
+
+.pokemon-type-tag {
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 3px 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-type-tag-name {
+  font-size: 12px;
+  margin: 0;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 1rem;
+    grid-template-rows: 150px 75vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-rows: 160px 75vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}

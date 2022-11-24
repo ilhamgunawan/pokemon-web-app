@@ -1,0 +1,229 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-logo {
+  width: 50%;
+  height: auto;
+}
+
+.header-buttons {
+  margin: 10px 0;
+}
+
+.header-button {
+  background-color: #d5d5d5;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-weight: 700;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.header-button:hover {
+  box-shadow: 0 2px 10px 3px var(--electricTwo);
+}
+
+.modal-blur {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal-container {
+  width: 90%;
+  height: 230px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #222;
+  z-index: 1;
+}
+
+.modal-type-item {
+  background-color: var(--darkOne);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.modal-type-item-selected {
+  background-color: var(--grassOne);
+  border: 1px solid #ccc;
+}
+
+.modal-type-item:hover {
+  background-color: var(--normalOne);
+}
+
+.modal-footer {
+  margin-top: 1rem;
+}
+
+.card-container {
+  padding: 1rem;
+  margin-top: 1rem;
+  animation: glowing 4s infinite;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.card {
+  display: block;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+  margin-bottom: 1rem;
+  background-color: #222;
+}
+
+.card-grass:hover {
+  box-shadow: 0 2px 10px 5px var(--grassTwo);
+}
+
+.card-normal:hover {
+  box-shadow: 0 2px 10px 5px var(--normalTwo);
+}
+
+.card-fighting:hover {
+  box-shadow: 0 2px 10px 5px var(--fightingTwo);
+}
+
+.card-flying:hover {
+  box-shadow: 0 2px 10px 5px var(--flyingTwo);
+}
+
+.card-poison:hover {
+  box-shadow: 0 2px 10px 5px var(--poisonTwo);
+}
+
+.card-ground:hover {
+  box-shadow: 0 2px 10px 5px var(--groundTwo);
+}
+
+.card-rock:hover {
+  box-shadow: 0 2px 10px 5px var(--rockTwo);
+}
+
+.card-bug:hover {
+  box-shadow: 0 2px 10px 5px var(--bugTwo);
+}
+
+.card-ghost:hover {
+  box-shadow: 0 2px 10px 5px var(--ghostTwo);
+}
+
+.card-steel:hover {
+  box-shadow: 0 2px 10px 5px var(--steelTwo);
+}
+
+.card-fire:hover {
+  box-shadow: 0 2px 10px 5px var(--fireTwo);
+}
+
+.card-water:hover {
+  box-shadow: 0 2px 10px 5px var(--waterTwo);
+}
+
+.card-electric:hover {
+  box-shadow: 0 2px 10px 5px var(--electricTwo);
+}
+
+.card-psychic:hover {
+  box-shadow: 0 2px 10px 5px var(--psychicTwo);
+}
+
+.card-ice:hover {
+  box-shadow: 0 2px 10px 5px var(--iceTwo);
+}
+
+.card-dragon:hover {
+  box-shadow: 0 2px 10px 5px var(--dragonTwo);
+}
+
+.card-dark:hover {
+  box-shadow: 0 2px 10px 5px var(--darkTwo);
+}
+
+.card-fairy:hover {
+  box-shadow: 0 2px 10px 5px var(--fairyTwo);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail-container {
+  background-color: #d5d5d5;
+  border-radius: 10px;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 40%;
+  height: auto;
+}
+
+.card-detail {
+  width: 100%;
+}
+
+.card-detail-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+@keyframes glowing {
+  0%, 100% {
+    box-shadow: 0 2px 50px 3px rgba(19, 76, 146, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0px 50px 20px rgba(15, 91, 172, 0.8);
+  } 
+}
+
+@media (min-width: 768px) {
+  .header-logo {
+    width: 250px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+
+  .modal-container {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    padding: 2rem;
+  }
+}
