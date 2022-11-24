@@ -1,3 +1,15 @@
+/**
+ * Readme:
+ * The filter functionality is not fully implemented, here are the current conditions:
+ * - The pokemon types input filter has been implemented
+ * - Added output input filter to the client side URL query, ex: /?types=fire,grass
+ * Net yet implemented:
+ * - Fetch pokemons data based on the input filter values, actually the implementation is quite straightforward
+ * - Need to add where filter to the GraphQL query based on pokemon type name
+ * - Due to limited time, the fetching functionality was not yet added
+ * 
+ */
+
 import styles from '../styles/Home.module.css';
 import commonStyles from '../styles/Common.module.css';
 import React from 'react';
